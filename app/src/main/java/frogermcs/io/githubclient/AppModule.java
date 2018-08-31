@@ -46,6 +46,12 @@ public class AppModule {
         return heavyExternalLibrary;
     }
 
+    private void bar(){
+        try {}
+        catch (Throwable t){
+        }
+    }
+
     @Provides
     @Singleton
     HeavyLibraryWrapper provideLibraryWrapper() {
